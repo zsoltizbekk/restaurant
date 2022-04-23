@@ -7,6 +7,13 @@
     font-family: 'myfont2';
     src: url('./assets/font2.ttf');
 }
+
+body {
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
 #content {
     background-image: url(./assets/background.jpg);
     background-size:100vw;
@@ -19,9 +26,7 @@
     min-height: 75vh;
     font-size: max(1rem ,2.5vw);
     text-align: center;
-    margin: 10px;
-    margin-bottom: 0px;
-    padding: 20px;
+    margin: 0px;
     gap: 20px;
 }
 
@@ -30,7 +35,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;
     margin-bottom: 10px;
     gap: 10px;
     margin-left: 45vw;
