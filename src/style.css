@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('./assets/font.ttf');
+}
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('./assets/font2.ttf');
+}
+#content {
+    background-image: url(./assets/background.jpg);
+    background-size:100vw;
+    
+}  
+
+.body {
+    font-family: myfont;
+    margin-left: 45vw;
+    min-height: 75vh;
+    font-size: max(1rem ,2.5vw);
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.header {
+    font-family: MyFont, Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-left: 45vw;
+}
+
+.aboutTitle, .messageTitle {
+    font-size: max(1rem ,2.5vw);
+}
+
+.msg, .about {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 45vw;
+    background-color: rgba(145, 139, 131, 0.51);
+    min-height: 75vh;
+    animation: fadein;
+    animation-duration: 1.2s;
+}
+
+@keyframes fadein {
+    from {color: transparent}
+    to {color: black}
+}
+
+.unchecked, button, .checked {
+    font-family: myfont;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    size: 2vw;
+    width: 15vw;
+    font-size: max(1rem ,2.5vw);
+    
+}
+
+.checked {
+    animation-name: check;
+    animation-duration: 1.5s;
+    color: #FFC600;
+}
+
+@keyframes check {
+    from{
+        color:rgb(39, 39, 39)
+    }
+    to{color: #FFC600}
+}
+
+.foodImg {
+    width: 10vw;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: max(0.75rem ,1.75vw);
+    margin-left: 45vw;
+    min-height: 25vh;
+    background-color: rgba(145, 139, 131, 0.51);
+    animation: fadein;
+    animation-duration: 1.2s;
+}
+
+.foodText, .foodTextLast {
+    
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foodText:after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    animation: fadeinimage;
+    animation-duration: 1.2s;
+}
+
+.foodDescription, .aboutText, .messageText {
+    font-family: myfont2;
+    font-size: max(0.60rem ,1.50vw);
+}
+
+img {
+    animation: fadeinimage;
+    animation-duration: 1.2s;
+}
+
+@keyframes fadeinimage {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+.aboutText, .messageText {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    font-family: myfont;
+    height: 7vh;
+    justify-content: center;
+    border-top: 2px solid black;
+    align-items: center;
+    gap: 20px;
+    background-color: #383838;
+    opacity: 0.9;
+    color: #FFC600;
+}
+
+.footer-img {
+    filter: invert(63%) sepia(61%) saturate(774%) hue-rotate(4deg) brightness(111%) contrast(102%);
+}
+
+.footer-img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(360deg) scale(1.4);
+}
