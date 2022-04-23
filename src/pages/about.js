@@ -1,8 +1,5 @@
 function aboutPage(){
     const content = document.querySelector('#content');
-    // const body = document.createElement("div");
-    // body.className = "body";
-    // content.appendChild(body);
     const body = document.querySelector(".body");
     body.innerHTML = "";
     const about = document.createElement("div");

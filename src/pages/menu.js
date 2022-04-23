@@ -61,23 +61,5 @@ function makeMenuPage(){
     thirdFood.appendChild(thirdFoodImg);
     body.appendChild(thirdFood);
 
-    // const fourthFood = document.createElement("div");
-    // fourthFood.className = "food";
-    // const fourthFoodText = document.createElement("div");
-    // fourthFoodText.className = "foodText";
-    // fourthFood.appendChild(fourthFoodText);
-    // const fourthFoodName = document.createElement("div");
-    // fourthFoodName.textContent = "SALMONE ANNEGATO E MASCARPONE"
-    // fourthFoodText.appendChild(fourthFoodName);
-    // const fourthFoodDescription = document.createElement("div");
-    // fourthFoodDescription.className = "foodDescription";
-    // fourthFoodDescription.textContent = `Tomato, mozzarella, brie chesse, porcini mushrooms, ham of Parms, rucola`;
-    // fourthFoodText.appendChild(fourthFoodDescription);
-    // const fourthFoodImg = document.createElement("img");
-    // fourthFoodImg.src = salmoneannegatoemascarpone;
-    // fourthFoodImg.className = "foodImg";
-    // fourthFood.appendChild(fourthFoodImg);
-    // body.appendChild(fourthFood);
-
 }
 export default makeMenuPage;
