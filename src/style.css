@@ -25,6 +25,7 @@ body {
     background-image: url(./assets/background.jpg);
     background-size:100vw;
     background-size: cover;
+    height: 100vh;
     
 }  
 
@@ -41,6 +42,8 @@ body {
 .header {
     font-family: MyFont, Roboto;
     display: flex;
+    background-color: #383838;
+    opacity: 0.9;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10px;
