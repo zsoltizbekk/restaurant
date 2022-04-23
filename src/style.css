@@ -8,23 +8,30 @@
     src: url('./assets/font2.ttf');
 }
 
+:root {
+    --footerheight: max(7vh, 50px);
+    --headerhight: max(7vh, 50px);
+}
+
+
 body {
-    
     margin: 0;
     margin-right: 0;
     padding: 0;
+    height: 100vh;
 }
 
 #content {
     background-image: url(./assets/background.jpg);
     background-size:100vw;
-    height: 100vh;
+    background-size: cover;
+    
 }  
 
 .body {
     font-family: myfont;
     margin-left: 45vw;
-    min-height: 75vh;
+    height: 86vh;
     font-size: max(1rem ,2.5vw);
     text-align: center;
     margin: 0px;
@@ -37,6 +44,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10px;
+    height: var(--headerhight);
     gap: 10px;
     margin-left: 45vw;
 }
@@ -45,13 +53,13 @@ body {
     font-size: max(1rem ,2.5vw);
 }
 
-.msg, .about {
+.msg, .about, .menu{
     display: block;
     justify-content: center;
     padding: 10px;
     margin-left: 45vw;
     background-color: rgba(145, 139, 131, 0.51);
-    min-height: 80vh;
+    min-height: 81vh;
     animation: fadein;
     animation-duration: 1.2s;
 }
@@ -98,11 +106,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     font-size: max(0.75rem ,1.75vw);
-    margin-left: 45vw;
-    min-height: 25vh;
-    background-color: rgba(145, 139, 131, 0.51);
-    animation: fadein;
-    animation-duration: 1.2s;
+    min-height: 27vh;
 }
 
 .foodText, .foodTextLast {
@@ -145,12 +149,12 @@ img {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100vw;
     display: flex;
     font-family: myfont;
-    height: 7vh;
+    height: var(--footerheight);
     justify-content: center;
     border-top: 2px solid black;
     align-items: center;
