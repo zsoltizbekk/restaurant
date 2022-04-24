@@ -6,6 +6,7 @@ function aboutPage(){
     about.className = "about";
     const aboutTitle = document.createElement("div");
     aboutTitle.innerHTML = "About us!";
+    aboutTitle.className = "aboutTitle";
     about.appendChild(aboutTitle);
     const aboutText = document.createElement("div");
     aboutText.className = "aboutText";

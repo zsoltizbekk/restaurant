@@ -12,19 +12,25 @@
     --footerheight: max(3vh, 30px);
     --headerhight: max(7vh, 50px);
 }
-
+html{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     margin: 0;
+    margin-bottom: 0px;
     margin-right: 0;
     padding: 0;
     height: 100vh;
+    background-image: url(./assets/background.jpg);
+    background-size:100vw;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #content {
-    background-image: url(./assets/background.jpg);
-    background-size:100vw;
-    background-size: cover;
+    
     height: 100vh;
     min-height: 400px;
     
@@ -37,7 +43,7 @@ body {
     font-size: max(1rem ,2.5vw);
     text-align: center;
     margin: 0px;
-    gap: 20px;
+    
 }
 
 .header {
@@ -47,7 +53,6 @@ body {
     opacity: 0.9;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 10px;
     height: var(--headerhight);
     gap: 10px;
     margin-left: 45vw;
@@ -55,17 +60,22 @@ body {
 
 .aboutTitle, .messageTitle {
     font-size: max(1rem ,2.5vw);
+    padding: 20px;
 }
 
 .msg, .about, .menu{
     display: block;
     justify-content: center;
-    padding: 10px;
+    padding: 0px;
     margin-left: 45vw;
     background-color: rgba(145, 139, 131, 0.51);
     min-height: 90vh;
     animation: fadein;
     animation-duration: 1.2s;
+}
+
+.menu{
+    padding-bottom: 50px;
 }
 
 @keyframes fadein {
@@ -111,6 +121,7 @@ body {
     align-items: center;
     font-size: max(0.75rem ,1.75vw);
     min-height: 30vh;
+    padding-bottom: -7vh;
 }
 
 .foodText, .foodTextLast {
@@ -148,8 +159,8 @@ img {
 }
 
 
-.aboutText, .messageText {
-    margin-top: 20px;
+.aboutText, .messageText, .foodText {
+    line-height: 1.6;
 }
 
 footer {
